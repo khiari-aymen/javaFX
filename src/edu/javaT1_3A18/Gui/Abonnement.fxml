@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="Abonnement_kh" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.javaT1.jui.AbonnementController">
+   <children>
+      <TableView fx:id="table_kh" layoutX="312.0" layoutY="64.0" prefHeight="238.0" prefWidth="218.0">
+        <columns>
+            <TableColumn fx:id="idAbonnement_kh1" maxWidth="108.00006103515625" prefWidth="74.4000244140625" text="id" />
+          <TableColumn fx:id="nom_kh1" maxWidth="108.00006103515625" minWidth="0.0" prefWidth="84.0" text="Nom" />
+            <TableColumn fx:id="prix_kh1" minWidth="0.0" prefWidth="59.20001220703125" text="  Prix" />
+        </columns>
+      </TableView>
+      <Pane layoutY="53.0" prefHeight="3.0" prefWidth="200.0" style="-fx-background-color: green;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Text layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consulter les abonnements:" wrappingWidth="208.78515243530273">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="575.0" layoutY="1.0" />
+      <Button fx:id="ajouter_kh" layoutX="14.0" layoutY="267.0" mnemonicParsing="false" onAction="#ajouter_type" text="Ajouter" />
+      <Button fx:id="modifier_kh" layoutX="76.0" layoutY="267.0" mnemonicParsing="false" onAction="#modifier_type" text="Modifier" />
+      <Button fx:id="supprimer_kh" layoutX="147.0" layoutY="266.0" mnemonicParsing="false" onAction="#supprimer_type" prefHeight="26.0" prefWidth="75.0" text="Supprimer" />
+      <TextField fx:id="nom_kh" layoutX="25.0" layoutY="77.0" text="Nom" />
+      <TextField fx:id="prix_kh" layoutX="25.0" layoutY="123.0" text="Prix" />
+   </children>
+</AnchorPane>

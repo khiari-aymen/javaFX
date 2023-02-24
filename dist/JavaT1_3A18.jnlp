@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaT1_3A18.jnlp">
+  <information>
+    <title>JavaT1_3A18</title>
+    <vendor>khiar</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaT1_3A18.jar" size="26676" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="edu.javaT1_3A18.Gui.AbonnementMain"  name="JavaT1_3A18" />
+  <update check="always"/>
+</jnlp>
